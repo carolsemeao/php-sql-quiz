@@ -49,7 +49,7 @@ body {
     INTRODUCTION PAGE STYLING
 ----------------------------- */
 .container-fluid {
-    background: url(/images/hw.jpg) center;
+    background: url(/projects/QuizCaro/images/hw.jpg);
     background-size: cover;
     background-color: #00000060;
     background-blend-mode: multiply;

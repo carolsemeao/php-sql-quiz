@@ -52,7 +52,7 @@
 
                     <div class="answered"><?php echo 'You have answered ' . round($percentage) . '%' . ' of the questions correctly.';?></div>
                 </div>
-                <form action="/QuizCaro/templates/introduction.php?qid=1">
+                <form action="/projects/QuizCaro/templates/introduction.php?qid=1">
                     <button class ="nxt-btn retry-btn">Retry <i class="fas fa-undo"></i></button>
                 </form>
             </div>

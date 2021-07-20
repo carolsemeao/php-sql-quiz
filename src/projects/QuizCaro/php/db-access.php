@@ -34,7 +34,7 @@ function DBConnection(){
         $connection -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     catch (PDOException $e){
-        echo '<p>connection failed' . $e -> getMessge() . '</p>';
+        echo '<p>connection failed' . $e -> getMessage() . '</p>';
         echo 'HTTP_HOST = ' . $_SERVER['HTTP_HOST'] . '<br>';
 
         echo 'DB_NAME = ' . DB_NAME . '<br>';
@@ -50,7 +50,7 @@ function DBConnection(){
 
 // ================ introduction data =======================
 
-function introductionFromDataBase ($quizID){
+function introductionFromDataBase($quizID) {
     //if(TRACE_DB_ACCESS) print "<h1> Harry Pooter </h1>";
 
     // Prepare, bind and execute  SELECT statement

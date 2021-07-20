@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="/QuizCaro/css/style.css">
+    <link rel="stylesheet" href="/projects/QuizCaro/css/style.css">
 
     <!-- other CSS files -->
-    <link rel="stylesheet" href="/QuizCaro/css/question.css">
-    <link rel="stylesheet" href="/QuizCaro/css/report.css">
+    <link rel="stylesheet" href="/projects/QuizCaro/css/question.css">
+    <link rel="stylesheet" href="/projects/QuizCaro/css/report.css">
 
     <!-- live.js connection -->
     <script type="text/javascript" src="https://livejs.com/live.js"></script>
@@ -34,5 +34,5 @@
   </head>
   <body>
     <div class = "nav">
-        <img class="logo" src = "/images/hp_name.png" alt = "Harry Potter Name">
+        <img class="logo" src = "/projects/QuizCaro/images/hp_name.png" alt = "Harry Potter Name">
     </div>

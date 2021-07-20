@@ -3,7 +3,6 @@
     include '../config.php';
     
     // Get quiz id and register it in the session
-
     if(isset($_GET['qid'])){
         $quizID = $_GET['qid'];
     }
@@ -11,13 +10,15 @@
         $quizID = 1;
     }
     
-
+    
     $_SESSION['quizID'] = $quizID;
-
+    
+    
     $pageData = introductionFromDataBase($quizID);
-
+    
+    
     $_SESSION['achievedPoints'] = 0;
-?>
+    ?>
 <?php include 'header.php'; ?>
 
     <div class="container-fluid">
