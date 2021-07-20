@@ -1,0 +1,141 @@
+/* -----------------
+    GLOBAL STYLING
+----------------- */
+
+* {
+    margin: var(--spacing);
+    padding: var(--spacing);
+    box-sizing: border-box;
+}
+
+
+/* ----------------------
+    REPORT-BOX STYLING
+--------------------- */
+
+.report-box {
+    line-height: 3;
+}
+
+.desc-feed {
+    background-color: #1c292ae8;
+    width: 100%;
+    text-align: var(--pos);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+/* ----------------
+    TITLE STYLING
+---------------- */
+
+.title {
+    color: var(--textColor);
+    font-size: 40px;
+    display: flex;
+    justify-content: var(--pos);
+    width: 100%;
+    font-weight: bold;
+    text-shadow:
+        0 0 7px var(--black),
+        0 0 9px var(--black),
+        0 0 10px var(--white),
+        0 0 20px var(--white),
+        0 0 25px var(--white),
+        0 0 30px var(--textColor),
+        0 0 40px var(--textColor),
+        0 0 55px var(--textColor);
+}
+
+/* -----------------
+    BUTTON STYLING
+----------------- */
+
+.retry-btn {
+    background-color: var(--secondaryColor);
+    display: inline-flex !important;
+    align-items: var(--pos);
+    justify-content: space-around;
+    font-size: 25px;
+    border: 1px solid var(--textColor);
+}
+
+.fa-undo {
+    font-size: 30px;
+}
+
+
+/* ----------------------
+    DESCRIPTION STYLING
+--------------------- */
+
+.description {
+    color: var(--textColor);
+    font-size: 25px;
+    padding: var(--spacing);
+    margin: var(--spacing);
+    width: 100%;
+    display: flex;
+    justify-content: var(--pos);
+}
+
+
+/* --------------------
+    FEEDBACK STYLING
+------------------- */
+
+
+.feedback-sct {
+    color: #e2b007ff;
+    font-size: 40px;
+    text-shadow:
+        0 0 7px var(--black),
+        0 0 9px var(--black),
+        0 0 10px var(--white),
+        0 0 20px var(--white),
+        0 0 25px var(--white),
+        0 0 30px var(--textColor),
+        0 0 40px var(--textColor),
+        0 0 55px var(--textColor);
+    text-transform: uppercase;
+}
+
+.answered {
+    color: var(--textColor);
+    font-size: 25px;
+}
+
+/* -----------------------------------
+    MEDIA QUERY FOR MOBILE DEVICES
+---------------------------------- */
+
+
+@media screen and (max-width: 720px) {
+    .report-box {
+        height: auto;
+        line-height: 1.4;
+    }
+
+    .title {
+        font-size: 25px;
+        padding: 20px 10px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .feedback-sct {
+        font-size: 30px;
+        padding: 50px 10px;
+    }
+
+    .answered {
+        font-size: 18px;
+    }
+
+    .retry-btn {
+        margin-top: 30px !important;
+    }
+}

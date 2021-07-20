@@ -1,0 +1,165 @@
+:root {
+    --primaryColor: #362321;
+    --secondaryColor: #1c292a;
+    --textColor: #e2b007ff;
+    --pos: center;
+    --spacing: 0px;
+    --black: #000;
+    --white: #fff;
+}
+
+
+/* -----------------
+    GLOBAL STYLING
+----------------- */
+
+* {
+    margin: var(--spacing);
+    padding: var(--spacing);
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* -------------
+    NAV STYLING
+-------------- */
+
+.nav {
+    background-color: var(--primaryColor);
+    width: 100%;
+    display: flex;
+    justify-content: var(--pos);
+    align-items: var(--pos);
+}
+
+.logo {
+    width: 200px;
+    margin: 20px;
+}
+
+
+/* -----------------------------
+    INTRODUCTION PAGE STYLING
+----------------------------- */
+.container-fluid {
+    background: url(/images/hw.jpg) center;
+    background-size: cover;
+    background-color: #00000060;
+    background-blend-mode: multiply;
+    height: 84vh;
+    width: 100vw;
+    display: flex;
+    justify-content: var(--pos);
+    align-items: var(--pos);
+}
+
+.intro {
+    display: flex;
+    justify-content: var(--pos);
+    align-items: var(--pos);
+    flex-direction: column;
+}
+
+.intro h1 {
+    color: var(--textColor);
+    font-size: 80px;
+}
+
+
+.btn {
+    background-color: var(--secondaryColor) !important;
+    color: var(--textColor) !important;
+    border-radius: 30px !important;
+    display: inline-flex !important;
+    align-items: var(--pos) !important;
+    justify-content: space-between;
+    margin: var(--spacing);
+}
+
+.btn h3 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: var(--primaryColor) !important;
+    border: 2px solid var(--textColor);
+}
+
+
+input[value]:hover {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.fa-feather-alt {
+    color: var(--textColor);
+    padding: var(--spacing) 20px;
+}
+
+
+
+/* -----------------
+    FOOTER STYLING
+----------------- */
+footer {
+    background-color: var(--primaryColor);
+    bottom: var(--spacing);
+    left: var(--spacing);
+    right: var(--spacing);
+    display: flex;
+    justify-content: var(--pos);
+    align-items: var(--pos);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer p {
+    display: flex;
+    justify-content: var(--pos);
+    align-self: var(--pos);
+    color: var(--textColor);
+    font-size: 20px;
+    margin: var(--spacing);
+    padding: 10px var(--spacing);
+}
+
+
+/* ---------------------------------
+    MEDIA QUERY FOR MOBILE DEVICES
+--------------------------------- */
+
+@media screen and (max-width: 720px) {
+
+    .intro h1 {
+        text-align: var(--pos);
+        font-size: 40px;
+    }
+
+    .btn {
+        width: 300px !important;
+        height: 80px !important;
+        margin-top: 40px !important;
+    }
+
+    .btn h3 {
+        font-size: 25px;
+        padding-left: 10px;
+        padding-top: 18px;
+    }
+
+    .fa-feather-alt {
+        padding: var(--spacing) 20px;
+    }
+
+    .container-fluid {
+        height: 81vh !important;
+    }
+}

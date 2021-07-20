@@ -1,0 +1,189 @@
+/* --------------------
+    GLOBAL STYLING
+------------------- */
+
+* {
+    margin: var(--spacing);
+    padding: var(--spacing);
+    box-sizing: border-box;
+}
+
+/* -----------------------
+    BACKGROUND STYLING
+---------------------- */
+
+.box {
+    display: flex;
+    justify-content: var(--pos);
+    align-items: var(--pos);
+    background-color: var(--black);
+    height: 84vh;
+
+}
+
+/* -------------------------
+    QUESTION-BOX STYLING
+------------------------ */
+
+.question-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: var(--pos);
+    align-items: var(--pos);
+    width: 900px;
+    height: 700px;
+    margin: 50px;
+    background-image: url(/images/dailyprophet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.question-box2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: var(--pos);
+    align-items: var(--pos);
+    border: 3px solid var(--white);
+    border-radius: 30px;
+    padding: 20px;
+    width: 95%;
+}
+
+/* -----------------------
+    QUESTION STYLING
+---------------------- */
+
+.questionID {
+    font-size: 35px;
+    color: var(--textColor);
+    z-index: 10;
+    text-decoration: none;
+    text-align: var(--pos);
+    margin: 30px var(--spacing);
+}
+
+
+/* ------------------------
+    ANSWER FORM STYLING
+----------------------- */
+
+.answers-box {
+    display: flex;
+    align-items: var(--pos);
+    width: 100%;
+    flex-direction: column;
+}
+
+.answer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--white);
+    font-size: 25px;
+    margin: var(--spacing) 50px;
+}
+
+input[type='radio'] {
+    width: 18px;
+    height: 18px;
+}
+
+.choices {
+    display: flex !important;
+    align-items: var(--pos);
+}
+
+
+/* ------------------
+    BUTTON STYLING
+------------------ */
+
+.nxt-btn {
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+    border-radius: 20px;
+    margin: 30px var(--spacing);
+    border: none;
+    width: 200px;
+    height: 50px;
+}
+
+
+.nxt-btn:hover {
+    background-color: var(--primaryColor) !important;
+    border: 1px solid var(--textColor);
+}
+
+
+/* -----------------------------------
+    MEDIA QUERY FOR MOBILE DEVICES
+---------------------------------- */
+
+@media screen and (max-width: 720px) {
+
+    body {
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+
+    .box {
+        height: 81vh;
+    }
+
+    .question-box1 {
+        height: auto;
+        width: 700px;
+        margin: 10px;
+    }
+
+    .question-box2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .questionID {
+        padding-bottom: 30px;
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    .answers-box {
+        display: flex;
+        align-items: var(--pos);
+        width: 100%;
+    }
+
+    .answer-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: var(--spacing);
+    }
+
+    input[type='radio'] {
+        width: 17px !important;
+        height: 17px !important;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input[type='radio'],
+    label {
+        padding: 15px 0px;
+        margin: 10px;
+    }
+
+    .choices {
+        display: flex !important;
+        align-items: var(--pos);
+    }
+
+    .nxt-btn {
+        margin: 20px;
+    }
+}
