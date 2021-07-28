@@ -163,3 +163,103 @@ footer p {
         height: 81vh !important;
     }
 }
+
+
+/* -----------------------------
+    FEEDBACK PAGE STYLING
+----------------------------- */
+
+input[type=text],
+input[type=mail],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #1c292a;
+    color: #e2b007ff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type=submit]:hover {
+    text-decoration: none;
+    background-color: var(--primaryColor) !important;
+    color: #e2b007ff;
+}
+
+textarea {
+    height: 200px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #362321;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    padding: 30px;
+}
+
+.form-sct {
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.container label {
+    color: #e2b007ff;
+    padding: 0;
+    margin: 0;
+}
+
+.fback-title {
+    color: #e2b007ff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* -----------------------------
+    THANKS PAGE STYLING
+----------------------------- */
+.thx {
+    height: 84vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-thx {
+    color: #e2b007ff;
+    text-align: center;
+}
+
+.wand {
+    width: 20%;
+    margin: 0 0 90px 0;
+}
+
+.bck-btn {
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+    border-radius: 20px;
+    margin-top: 60px;
+    border: none;
+    width: 200px;
+    height: 50px;
+}

@@ -1,5 +1,5 @@
 <?php
-include 'php/auth.php';
+//include 'php/auth.php';
 
 function addLinks()
 {

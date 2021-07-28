@@ -142,4 +142,18 @@ function reportDataFromDB($quizID){
     return $report;
 }
 
+
+// ================ feedback page data =======================
+
+function feedbackDataFromDB(){
+    //$query = DBConnection() -> prepare("SELECT * FROM Feedback");
+    //$query -> execute();
+
+    
+    
+    // $fback = $query -> fetch(PDO::FETCH_ASSOC);
+    // print_r($fback);
+    // return $fback;
+}
+
 ?>

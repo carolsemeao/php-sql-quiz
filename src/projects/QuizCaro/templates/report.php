@@ -55,6 +55,9 @@
                 <form action="/projects/QuizCaro/templates/introduction.php?qid=1">
                     <button class ="nxt-btn retry-btn">Retry <i class="fas fa-undo"></i></button>
                 </form>
+                <form action="/projects/QuizCaro/templates/feedback.php?qid=1">
+                    <button class ="nxt-btn retry-btn">Feedback <i class="far fa-envelope"></i></button>
+                </form>
             </div>
         </div>
     </div>

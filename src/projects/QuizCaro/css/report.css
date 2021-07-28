@@ -61,7 +61,8 @@
     border: 1px solid var(--textColor);
 }
 
-.fa-undo {
+.fa-undo,
+.fa-envelope {
     font-size: 30px;
 }
 

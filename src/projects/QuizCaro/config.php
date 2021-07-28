@@ -10,4 +10,3 @@ set_include_path($incPaths);
 
 // includes required for all page templates
 include 'db-access.php';
-include 'auth.php';
